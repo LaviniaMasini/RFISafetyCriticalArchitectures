@@ -1,0 +1,872 @@
+<html>
+<head>
+<title>Arch1 Documentation</title>
+<meta NAME="Description" Content="Project Documentation">
+</head>
+<body TEXT="black" BGCOLOR="white" LINK="blue" ALINK="red" VLINK="indigo" BACKGROUND="" >
+<p>
+<B>Model: Arch1</B>
+<br />
+<img USEMAP="#ImageMap.Arch1" type="image/svg+xml" src="Arch1.png" height="851" width="1273"></img>
+</p>
+<MAP NAME="ImageMap.Arch1">
+<AREA SHAPE="rect" HREF="#Place.Arch1.MicroA_N" COORDS="35,15 55,35">
+<AREA SHAPE="rect" HREF="#Place.Arch1.MicroB_N" COORDS="35,75 55,95">
+<AREA SHAPE="rect" HREF="#Place.Arch1.WDALIC_N" COORDS="35,145 55,165">
+<AREA SHAPE="rect" HREF="#Place.Arch1.WDALIC_FailedUnsafe_N" COORDS="435,125 455,145">
+<AREA SHAPE="rect" HREF="#Place.Arch1.CPU_Failed_Unsafe_N" COORDS="435,75 455,95">
+<AREA SHAPE="rect" HREF="#Place.Arch1.CPU_Failed_N" COORDS="435,15 455,35">
+<AREA SHAPE="rect" HREF="#Place.Arch1.WDALIC_Failed_N" COORDS="435,185 455,205">
+<AREA SHAPE="rect" HREF="#Place.Arch1.MicroA_R" COORDS="35,235 55,255">
+<AREA SHAPE="rect" HREF="#Place.Arch1.CPU_Failed_R" COORDS="435,235 455,255">
+<AREA SHAPE="rect" HREF="#Place.Arch1.MicroB_R" COORDS="35,295 55,315">
+<AREA SHAPE="rect" HREF="#Place.Arch1.CPU_Failed_Unsafe_R" COORDS="435,295 455,315">
+<AREA SHAPE="rect" HREF="#Place.Arch1.WDALIC_FailedUnsafe_R" COORDS="435,335 455,355">
+<AREA SHAPE="rect" HREF="#Place.Arch1.WDALIC_R" COORDS="35,355 55,375">
+<AREA SHAPE="rect" HREF="#Place.Arch1.WDALIC_Failed_R" COORDS="435,395 455,415">
+<AREA SHAPE="rect" HREF="#Place.Arch1.UnsafeFailure" COORDS="1035,175 1055,195">
+<AREA SHAPE="rect" HREF="#Place.Arch1.SafeFailure" COORDS="1035,395 1055,415">
+<AREA SHAPE="rect" HREF="#Place.Arch1.CAN_Failed_N" COORDS="295,435 315,455">
+<AREA SHAPE="rect" HREF="#Place.Arch1.CAN_N" COORDS="35,435 55,455">
+<AREA SHAPE="rect" HREF="#Place.Arch1.CAN_Failed_R" COORDS="295,495 315,515">
+<AREA SHAPE="rect" HREF="#Place.Arch1.CAN_R" COORDS="35,495 55,515">
+<AREA SHAPE="rect" HREF="#Place.Arch1.ODO_FailedForBabblingIdiot_N" COORDS="295,545 315,565">
+<AREA SHAPE="rect" HREF="#Place.Arch1.ODO_N" COORDS="35,575 55,595">
+<AREA SHAPE="rect" HREF="#Place.Arch1.ODO_Failed_N" COORDS="295,585 315,605">
+<AREA SHAPE="rect" HREF="#Place.Arch1.ODO_FailedForBabblingIdiot_R" COORDS="295,625 315,645">
+<AREA SHAPE="rect" HREF="#Place.Arch1.ODO_R" COORDS="35,655 55,675">
+<AREA SHAPE="rect" HREF="#Place.Arch1.ODO_Failed_R" COORDS="295,665 315,685">
+<AREA SHAPE="rect" HREF="#Place.Arch1.IO_FailedForBabblingIdiot_N" COORDS="295,695 315,715">
+<AREA SHAPE="rect" HREF="#Place.Arch1.IO_N" COORDS="35,725 55,745">
+<AREA SHAPE="rect" HREF="#Place.Arch1.IO_Failed_N" COORDS="295,735 315,755">
+<AREA SHAPE="rect" HREF="#Place.Arch1.IO_FailedForBabblingIdiot_R" COORDS="295,775 315,795">
+<AREA SHAPE="rect" HREF="#Place.Arch1.IO_R" COORDS="35,805 55,825">
+<AREA SHAPE="rect" HREF="#Place.Arch1.IO_Failed_R" COORDS="295,815 315,835">
+<AREA SHAPE="rect" HREF="#Input Gate.Arch1.IG_CPU_WDALIC" COORDS="655,175 675,195">
+<AREA SHAPE="rect" HREF="#Input Gate.Arch1.IG_SysFails" COORDS="735,395 755,415">
+<AREA SHAPE="rect" HREF="#Input Gate.Arch1.IG_Restart" COORDS="1035,275 1055,295">
+<AREA SHAPE="rect" HREF="#Output Gate.Arch1.OG_CPU_N" COORDS="215,45 235,65">
+<AREA SHAPE="rect" HREF="#Output Gate.Arch1.OG_WDALIC_Safe_N" COORDS="295,185 315,205">
+<AREA SHAPE="rect" HREF="#Output Gate.Arch1.OG_CPU_R" COORDS="215,265 235,285">
+<AREA SHAPE="rect" HREF="#Output Gate.Arch1.OG_SysFailsUnsafe" COORDS="905,175 925,195">
+<AREA SHAPE="rect" HREF="#Output Gate.Arch1.OG_WDALIC_Safe_R" COORDS="295,395 315,415">
+<AREA SHAPE="rect" HREF="#Output Gate.Arch1.OG_SysFails" COORDS="895,395 915,415">
+<AREA SHAPE="rect" HREF="#Output Gate.Arch1.OG_CAN_N" COORDS="205,435 225,455">
+<AREA SHAPE="rect" HREF="#Output Gate.Arch1.OG_CAN_R" COORDS="205,495 225,515">
+<AREA SHAPE="rect" HREF="#Output Gate.Arch1.OG_Restart" COORDS="1225,275 1245,295">
+<AREA SHAPE="rect" HREF="#Timed Activity.Arch1.MicroA_Fails_N" COORDS="132,10 138,40">
+<AREA SHAPE="rect" HREF="#Timed Activity.Arch1.MicroB_Fails_N" COORDS="132,70 138,100">
+<AREA SHAPE="rect" HREF="#Timed Activity.Arch1.WDALIC_Fails_N" COORDS="199,140 211,170">
+<AREA SHAPE="rect" HREF="#Timed Activity.Arch1.MicroA_Fails_R" COORDS="132,230 138,260">
+<AREA SHAPE="rect" HREF="#Timed Activity.Arch1.MicroB_Fails_R" COORDS="132,290 138,320">
+<AREA SHAPE="rect" HREF="#Timed Activity.Arch1.WDALIC_Fails_R" COORDS="199,350 211,380">
+<AREA SHAPE="rect" HREF="#Timed Activity.Arch1.CAN_Fails_N" COORDS="132,430 138,460">
+<AREA SHAPE="rect" HREF="#Timed Activity.Arch1.Restart" COORDS="1132,270 1138,300">
+<AREA SHAPE="rect" HREF="#Timed Activity.Arch1.CAN_Fails_R" COORDS="132,490 138,520">
+<AREA SHAPE="rect" HREF="#Timed Activity.Arch1.ODO_Fails_N" COORDS="189,570 201,600">
+<AREA SHAPE="rect" HREF="#Timed Activity.Arch1.ODO_Fails_R" COORDS="189,650 201,680">
+<AREA SHAPE="rect" HREF="#Timed Activity.Arch1.IO_Fails_N" COORDS="189,720 201,750">
+<AREA SHAPE="rect" HREF="#Timed Activity.Arch1.IO_Fails_R" COORDS="189,800 201,830">
+<AREA SHAPE="rect" HREF="#Instantaneous Activity.Arch1.SysFails_Unsafe" COORDS="794,170 797,200">
+<AREA SHAPE="rect" HREF="#Instantaneous Activity.Arch1.SysFails" COORDS="824,390 827,420">
+</MAP>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<caption align="Top"><font size="2"><B><font color="black">Place Attributes</font></B>: </caption>
+<tr ><th width="150" > <font size="2"><B>Place Names</B></th><th width="500" > <font size="2"><B>Initial Markings</B></th></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.Arch1.CAN_Failed_N" >CAN_Failed_N</a>
+</font></td><td > <font size="2"><center>0</center></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.Arch1.CAN_Failed_R" >CAN_Failed_R</a>
+</font></td><td > <font size="2"><center>0</center></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.Arch1.CAN_N" >CAN_N</a>
+</font></td><td > <font size="2"><center>1</center></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.Arch1.CAN_R" >CAN_R</a>
+</font></td><td > <font size="2"><center>1</center></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.Arch1.CPU_Failed_N" >CPU_Failed_N</a>
+</font></td><td > <font size="2"><center>0</center></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.Arch1.CPU_Failed_R" >CPU_Failed_R</a>
+</font></td><td > <font size="2"><center>0</center></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.Arch1.CPU_Failed_Unsafe_N" >CPU_Failed_Unsafe_N</a>
+</font></td><td > <font size="2"><center>0</center></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.Arch1.CPU_Failed_Unsafe_R" >CPU_Failed_Unsafe_R</a>
+</font></td><td > <font size="2"><center>0</center></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.Arch1.IO_FailedForBabblingIdiot_N" >IO_FailedForBabblingIdiot_N</a>
+</font></td><td > <font size="2"><center>0</center></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.Arch1.IO_FailedForBabblingIdiot_R" >IO_FailedForBabblingIdiot_R</a>
+</font></td><td > <font size="2"><center>0</center></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.Arch1.IO_Failed_N" >IO_Failed_N</a>
+</font></td><td > <font size="2"><center>0</center></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.Arch1.IO_Failed_R" >IO_Failed_R</a>
+</font></td><td > <font size="2"><center>0</center></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.Arch1.IO_N" >IO_N</a>
+</font></td><td > <font size="2"><center>1</center></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.Arch1.IO_R" >IO_R</a>
+</font></td><td > <font size="2"><center>1</center></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.Arch1.MicroA_N" >MicroA_N</a>
+</font></td><td > <font size="2"><center>1</center></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.Arch1.MicroA_R" >MicroA_R</a>
+</font></td><td > <font size="2"><center>1</center></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.Arch1.MicroB_N" >MicroB_N</a>
+</font></td><td > <font size="2"><center>1</center></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.Arch1.MicroB_R" >MicroB_R</a>
+</font></td><td > <font size="2"><center>1</center></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.Arch1.ODO_FailedForBabblingIdiot_N" >ODO_FailedForBabblingIdiot_N</a>
+</font></td><td > <font size="2"><center>0</center></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.Arch1.ODO_FailedForBabblingIdiot_R" >ODO_FailedForBabblingIdiot_R</a>
+</font></td><td > <font size="2"><center>0</center></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.Arch1.ODO_Failed_N" >ODO_Failed_N</a>
+</font></td><td > <font size="2"><center>0</center></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.Arch1.ODO_Failed_R" >ODO_Failed_R</a>
+</font></td><td > <font size="2"><center>0</center></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.Arch1.ODO_N" >ODO_N</a>
+</font></td><td > <font size="2"><center>1</center></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.Arch1.ODO_R" >ODO_R</a>
+</font></td><td > <font size="2"><center>1</center></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.Arch1.SafeFailure" >SafeFailure</a>
+</font></td><td > <font size="2"><center>0</center></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.Arch1.UnsafeFailure" >UnsafeFailure</a>
+</font></td><td > <font size="2"><center>0</center></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.Arch1.WDALIC_FailedUnsafe_N" >WDALIC_FailedUnsafe_N</a>
+</font></td><td > <font size="2"><center>0</center></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.Arch1.WDALIC_FailedUnsafe_R" >WDALIC_FailedUnsafe_R</a>
+</font></td><td > <font size="2"><center>0</center></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.Arch1.WDALIC_Failed_N" >WDALIC_Failed_N</a>
+</font></td><td > <font size="2"><center>0</center></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.Arch1.WDALIC_Failed_R" >WDALIC_Failed_R</a>
+</font></td><td > <font size="2"><center>0</center></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.Arch1.WDALIC_N" >WDALIC_N</a>
+</font></td><td > <font size="2"><center>1</center></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Place.Arch1.WDALIC_R" >WDALIC_R</a>
+</font></td><td > <font size="2"><center>1</center></td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th width="150" > <font size="2">Timed Activity: </th><th width="500" > <font size="2"><font color="blue"><a name="Timed Activity.Arch1.CAN_Fails_N" ><B>CAN_Fails_N</B></a>
+</font></th></tr>
+<tr ><td > <font size="2"><B><center><BR> Distribution Parameters</center></B></td><td > <font size="2"><B>Rate</B><br>
+<pre><font size="2">
+CAN_FailureRate
+</font></pre>
+</td></tr>
+<tr ><td > <font size="2"><B><center>Activation Predicate</center></B></td><td > <font size="2"><center>(none)</center></td></tr>
+<tr ><td > <font size="2"><B><center>Reactivation Predicate</center></B></td><td > <font size="2"><center>(none)</center></td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th width="150" > <font size="2">Timed Activity: </th><th width="500" > <font size="2"><font color="blue"><a name="Timed Activity.Arch1.CAN_Fails_R" ><B>CAN_Fails_R</B></a>
+</font></th></tr>
+<tr ><td > <font size="2"><B><center><BR> Distribution Parameters</center></B></td><td > <font size="2"><B>Rate</B><br>
+<pre><font size="2">
+CAN_FailureRate
+</font></pre>
+</td></tr>
+<tr ><td > <font size="2"><B><center>Activation Predicate</center></B></td><td > <font size="2"><center>(none)</center></td></tr>
+<tr ><td > <font size="2"><B><center>Reactivation Predicate</center></B></td><td > <font size="2"><center>(none)</center></td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th width="150" > <font size="2">Timed Activity: </th><th width="500" > <font size="2"><font color="blue"><a name="Timed Activity.Arch1.IO_Fails_N" ><B>IO_Fails_N</B></a>
+</font></th></tr>
+<tr ><td > <font size="2"><B><center><BR> Distribution Parameters</center></B></td><td > <font size="2"><B>Rate</B><br>
+<pre><font size="2">
+IO_FailureRate
+</font></pre>
+</td></tr>
+<tr ><td > <font size="2"><B><center>Activation Predicate</center></B></td><td > <font size="2"><center>(none)</center></td></tr>
+<tr ><td > <font size="2"><B><center>Reactivation Predicate</center></B></td><td > <font size="2"><center>(none)</center></td></tr>
+<tr ><td > <font size="2"><B><center>Case Distributions</center></B></td><td > <font size="2"><B>case 1</B><br>
+<pre><font size="2">
+return babb_idiot_prob;
+</font></pre>
+<B>case 2</B><br>
+<pre><font size="2">
+return 1 - babb_idiot_prob;
+</font></pre>
+</td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th width="150" > <font size="2">Timed Activity: </th><th width="500" > <font size="2"><font color="blue"><a name="Timed Activity.Arch1.IO_Fails_R" ><B>IO_Fails_R</B></a>
+</font></th></tr>
+<tr ><td > <font size="2"><B><center><BR> Distribution Parameters</center></B></td><td > <font size="2"><B>Rate</B><br>
+<pre><font size="2">
+IO_FailureRate
+</font></pre>
+</td></tr>
+<tr ><td > <font size="2"><B><center>Activation Predicate</center></B></td><td > <font size="2"><center>(none)</center></td></tr>
+<tr ><td > <font size="2"><B><center>Reactivation Predicate</center></B></td><td > <font size="2"><center>(none)</center></td></tr>
+<tr ><td > <font size="2"><B><center>Case Distributions</center></B></td><td > <font size="2"><B>case 1</B><br>
+<pre><font size="2">
+return babb_idiot_prob;
+</font></pre>
+<B>case 2</B><br>
+<pre><font size="2">
+return 1 - babb_idiot_prob;
+</font></pre>
+</td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th width="150" > <font size="2">Timed Activity: </th><th width="500" > <font size="2"><font color="blue"><a name="Timed Activity.Arch1.MicroA_Fails_N" ><B>MicroA_Fails_N</B></a>
+</font></th></tr>
+<tr ><td > <font size="2"><B><center><BR> Distribution Parameters</center></B></td><td > <font size="2"><B>Rate</B><br>
+<pre><font size="2">
+MicroA_FailureRate
+</font></pre>
+</td></tr>
+<tr ><td > <font size="2"><B><center>Activation Predicate</center></B></td><td > <font size="2"><center>(none)</center></td></tr>
+<tr ><td > <font size="2"><B><center>Reactivation Predicate</center></B></td><td > <font size="2"><center>(none)</center></td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th width="150" > <font size="2">Timed Activity: </th><th width="500" > <font size="2"><font color="blue"><a name="Timed Activity.Arch1.MicroA_Fails_R" ><B>MicroA_Fails_R</B></a>
+</font></th></tr>
+<tr ><td > <font size="2"><B><center><BR> Distribution Parameters</center></B></td><td > <font size="2"><B>Rate</B><br>
+<pre><font size="2">
+MicroA_FailureRate
+</font></pre>
+</td></tr>
+<tr ><td > <font size="2"><B><center>Activation Predicate</center></B></td><td > <font size="2"><center>(none)</center></td></tr>
+<tr ><td > <font size="2"><B><center>Reactivation Predicate</center></B></td><td > <font size="2"><center>(none)</center></td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th width="150" > <font size="2">Timed Activity: </th><th width="500" > <font size="2"><font color="blue"><a name="Timed Activity.Arch1.MicroB_Fails_N" ><B>MicroB_Fails_N</B></a>
+</font></th></tr>
+<tr ><td > <font size="2"><B><center><BR> Distribution Parameters</center></B></td><td > <font size="2"><B>Rate</B><br>
+<pre><font size="2">
+MicroB_FailureRate
+</font></pre>
+</td></tr>
+<tr ><td > <font size="2"><B><center>Activation Predicate</center></B></td><td > <font size="2"><center>(none)</center></td></tr>
+<tr ><td > <font size="2"><B><center>Reactivation Predicate</center></B></td><td > <font size="2"><center>(none)</center></td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th width="150" > <font size="2">Timed Activity: </th><th width="500" > <font size="2"><font color="blue"><a name="Timed Activity.Arch1.MicroB_Fails_R" ><B>MicroB_Fails_R</B></a>
+</font></th></tr>
+<tr ><td > <font size="2"><B><center><BR> Distribution Parameters</center></B></td><td > <font size="2"><B>Rate</B><br>
+<pre><font size="2">
+MicroB_FailureRate
+</font></pre>
+</td></tr>
+<tr ><td > <font size="2"><B><center>Activation Predicate</center></B></td><td > <font size="2"><center>(none)</center></td></tr>
+<tr ><td > <font size="2"><B><center>Reactivation Predicate</center></B></td><td > <font size="2"><center>(none)</center></td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th width="150" > <font size="2">Timed Activity: </th><th width="500" > <font size="2"><font color="blue"><a name="Timed Activity.Arch1.ODO_Fails_N" ><B>ODO_Fails_N</B></a>
+</font></th></tr>
+<tr ><td > <font size="2"><B><center><BR> Distribution Parameters</center></B></td><td > <font size="2"><B>Rate</B><br>
+<pre><font size="2">
+ODO_FailureRate
+</font></pre>
+</td></tr>
+<tr ><td > <font size="2"><B><center>Activation Predicate</center></B></td><td > <font size="2"><center>(none)</center></td></tr>
+<tr ><td > <font size="2"><B><center>Reactivation Predicate</center></B></td><td > <font size="2"><center>(none)</center></td></tr>
+<tr ><td > <font size="2"><B><center>Case Distributions</center></B></td><td > <font size="2"><B>case 1</B><br>
+<pre><font size="2">
+return babb_idiot_prob;
+</font></pre>
+<B>case 2</B><br>
+<pre><font size="2">
+return 1 - babb_idiot_prob;
+</font></pre>
+</td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th width="150" > <font size="2">Timed Activity: </th><th width="500" > <font size="2"><font color="blue"><a name="Timed Activity.Arch1.ODO_Fails_R" ><B>ODO_Fails_R</B></a>
+</font></th></tr>
+<tr ><td > <font size="2"><B><center><BR> Distribution Parameters</center></B></td><td > <font size="2"><B>Rate</B><br>
+<pre><font size="2">
+ODO_FailureRate
+</font></pre>
+</td></tr>
+<tr ><td > <font size="2"><B><center>Activation Predicate</center></B></td><td > <font size="2"><center>(none)</center></td></tr>
+<tr ><td > <font size="2"><B><center>Reactivation Predicate</center></B></td><td > <font size="2"><center>(none)</center></td></tr>
+<tr ><td > <font size="2"><B><center>Case Distributions</center></B></td><td > <font size="2"><B>case 1</B><br>
+<pre><font size="2">
+return babb_idiot_prob;
+</font></pre>
+<B>case 2</B><br>
+<pre><font size="2">
+return 1 - babb_idiot_prob;
+</font></pre>
+</td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th width="150" > <font size="2">Timed Activity: </th><th width="500" > <font size="2"><font color="blue"><a name="Timed Activity.Arch1.Restart" ><B>Restart</B></a>
+</font></th></tr>
+<tr ><td > <font size="2"><B><center><BR> Distribution Parameters</center></B></td><td > <font size="2"><B>Rate</B><br>
+<pre><font size="2">
+1
+</font></pre>
+</td></tr>
+<tr ><td > <font size="2"><B><center>Activation Predicate</center></B></td><td > <font size="2"><center>(none)</center></td></tr>
+<tr ><td > <font size="2"><B><center>Reactivation Predicate</center></B></td><td > <font size="2"><center>(none)</center></td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th width="150" > <font size="2">Timed Activity: </th><th width="500" > <font size="2"><font color="blue"><a name="Timed Activity.Arch1.WDALIC_Fails_N" ><B>WDALIC_Fails_N</B></a>
+</font></th></tr>
+<tr ><td > <font size="2"><B><center><BR> Distribution Parameters</center></B></td><td > <font size="2"><B>Rate</B><br>
+<pre><font size="2">
+WDALIC_FailureRate
+</font></pre>
+</td></tr>
+<tr ><td > <font size="2"><B><center>Activation Predicate</center></B></td><td > <font size="2"><center>(none)</center></td></tr>
+<tr ><td > <font size="2"><B><center>Reactivation Predicate</center></B></td><td > <font size="2"><center>(none)</center></td></tr>
+<tr ><td > <font size="2"><B><center>Case Distributions</center></B></td><td > <font size="2"><B>case 1</B><br>
+<pre><font size="2">
+return wdalic_prob_unsafe;
+</font></pre>
+<B>case 2</B><br>
+<pre><font size="2">
+return 1 - wdalic_prob_unsafe;
+</font></pre>
+</td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th width="150" > <font size="2">Timed Activity: </th><th width="500" > <font size="2"><font color="blue"><a name="Timed Activity.Arch1.WDALIC_Fails_R" ><B>WDALIC_Fails_R</B></a>
+</font></th></tr>
+<tr ><td > <font size="2"><B><center><BR> Distribution Parameters</center></B></td><td > <font size="2"><B>Rate</B><br>
+<pre><font size="2">
+WDALIC_FailureRate
+</font></pre>
+</td></tr>
+<tr ><td > <font size="2"><B><center>Activation Predicate</center></B></td><td > <font size="2"><center>(none)</center></td></tr>
+<tr ><td > <font size="2"><B><center>Reactivation Predicate</center></B></td><td > <font size="2"><center>(none)</center></td></tr>
+<tr ><td > <font size="2"><B><center>Case Distributions</center></B></td><td > <font size="2"><B>case 1</B><br>
+<pre><font size="2">
+return wdalic_prob_unsafe;
+</font></pre>
+<B>case 2</B><br>
+<pre><font size="2">
+return 1 - wdalic_prob_unsafe;
+</font></pre>
+</td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th width="650" > <font size="2"><font color="black">Instantaneous Activities Without Cases: </font></th></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Instantaneous Activity.Arch1.SysFails" >SysFails</a>
+</font></td></tr>
+<tr ><td > <font size="2"><font color="blue"><a name="Instantaneous Activity.Arch1.SysFails_Unsafe" >SysFails_Unsafe</a>
+</font></td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th width="150" > <font size="2">Input Gate:</th><th width="500" > <font size="2"><font color="blue"><a name="Input Gate.Arch1.IG_CPU_WDALIC" >IG_CPU_WDALIC</a>
+</font></th></tr>
+<tr ><td > <font size="2"><B><center>Predicate</center></B></td><td > <font size="2"><pre><font size="2">
+CPU_Failed_Unsafe_N-&gt;Mark() == 1 && WDALIC_FailedUnsafe_N-&gt;Mark() == 1
+||
+CPU_Failed_Unsafe_R-&gt;Mark() == 1 && WDALIC_FailedUnsafe_R-&gt;Mark() == 1
+</font></pre>
+</td></tr>
+<tr ><td > <font size="2"><B><center>Function</center></B></td><td > <font size="2"><pre><font size="2">
+CPU_Failed_Unsafe_N-&gt;Mark() = 0;
+WDALIC_FailedUnsafe_N-&gt;Mark() = 0;
+CPU_Failed_Unsafe_R-&gt;Mark() = 0;
+WDALIC_FailedUnsafe_R-&gt;Mark() = 0;
+</font></pre>
+</td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th width="150" > <font size="2">Input Gate:</th><th width="500" > <font size="2"><font color="blue"><a name="Input Gate.Arch1.IG_Restart" >IG_Restart</a>
+</font></th></tr>
+<tr ><td > <font size="2"><B><center>Predicate</center></B></td><td > <font size="2"><pre><font size="2">
+UnsafeFailure-&gt;Mark() == 1 || SafeFailure-&gt;Mark() == 1
+</font></pre>
+</td></tr>
+<tr ><td > <font size="2"><B><center>Function</center></B></td><td > <font size="2"><pre><font size="2">
+UnsafeFailure-&gt;Mark() = 0;
+SafeFailure-&gt;Mark() = 0;
+</font></pre>
+</td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th width="150" > <font size="2">Input Gate:</th><th width="500" > <font size="2"><font color="blue"><a name="Input Gate.Arch1.IG_SysFails" >IG_SysFails</a>
+</font></th></tr>
+<tr ><td > <font size="2"><B><center>Predicate</center></B></td><td > <font size="2"><pre><font size="2">
+(CPU_Failed_N-&gt;Mark() == 1 ||
+WDALIC_Failed_N-&gt;Mark() == 1 ||
+CAN_Failed_N-&gt;Mark() == 1)
+&&
+(CPU_Failed_R-&gt;Mark() == 1 ||
+WDALIC_Failed_R-&gt;Mark() == 1 ||
+CAN_Failed_R-&gt;Mark() == 1)
+||
+ODO_FailedForBabblingIdiot_N-&gt;Mark() == 1
+||
+ODO_FailedForBabblingIdiot_R-&gt;Mark() == 1
+||
+(ODO_Failed_N-&gt;Mark() == 1 && ODO_Failed_R-&gt;Mark() == 1)
+||
+IO_FailedForBabblingIdiot_N-&gt;Mark() == 1
+||
+IO_FailedForBabblingIdiot_R-&gt;Mark() == 1
+||
+(IO_Failed_N-&gt;Mark() == 1 && IO_Failed_R-&gt;Mark() == 1)
+</font></pre>
+</td></tr>
+<tr ><td > <font size="2"><B><center>Function</center></B></td><td > <font size="2"><pre><font size="2">
+CPU_Failed_N-&gt;Mark() = 0;
+CPU_Failed_R-&gt;Mark() = 0;
+WDALIC_Failed_N-&gt;Mark() = 0;
+WDALIC_Failed_R-&gt;Mark() = 0;
+WDALIC_FailedUnsafe_N-&gt;Mark() = 0;
+WDALIC_FailedUnsafe_R-&gt;Mark() = 0;
+CAN_Failed_N-&gt;Mark() = 0;
+CAN_Failed_R-&gt;Mark() = 0;
+ODO_FailedForBabblingIdiot_N-&gt;Mark() = 0;
+ODO_FailedForBabblingIdiot_R-&gt;Mark() = 0;
+ODO_Failed_N-&gt;Mark() = 0;
+ODO_Failed_R-&gt;Mark() = 0;
+IO_FailedForBabblingIdiot_N-&gt;Mark() = 0;
+IO_FailedForBabblingIdiot_R-&gt;Mark() = 0;
+IO_Failed_N-&gt;Mark() = 0;
+IO_Failed_R-&gt;Mark() = 0;
+</font></pre>
+</td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th width="150" > <font size="2">Output Gate:</th><th width="500" > <font size="2"><font color="blue"><a name="Output Gate.Arch1.OG_CAN_N" >OG_CAN_N</a>
+</font></th></tr>
+<tr ><td > <font size="2"><B><center>Function</center></B></td><td > <font size="2"><pre><font size="2">
+MicroA_N-&gt;Mark() = 0;
+MicroB_N-&gt;Mark() = 0;
+CPU_Failed_N-&gt;Mark() = 1;
+WDALIC_Failed_N-&gt;Mark() = 1;
+CAN_Failed_N-&gt;Mark() = 1;
+if(WDALIC_FailedUnsafe_N-&gt;Mark() == 1){
+	WDALIC_FailedUnsafe_N-&gt;Mark() = 0;
+} else{
+	WDALIC_N-&gt;Mark() = 0;
+}
+</font></pre>
+</td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th width="150" > <font size="2">Output Gate:</th><th width="500" > <font size="2"><font color="blue"><a name="Output Gate.Arch1.OG_CAN_R" >OG_CAN_R</a>
+</font></th></tr>
+<tr ><td > <font size="2"><B><center>Function</center></B></td><td > <font size="2"><pre><font size="2">
+MicroA_R-&gt;Mark() = 0;
+MicroB_R-&gt;Mark() = 0;
+CPU_Failed_R-&gt;Mark() = 1;
+WDALIC_Failed_R-&gt;Mark() = 1;
+CAN_Failed_R-&gt;Mark() = 1;
+if(WDALIC_FailedUnsafe_R-&gt;Mark() == 1){
+	WDALIC_FailedUnsafe_R-&gt;Mark() = 0;
+} else{
+	WDALIC_R-&gt;Mark() = 0;
+}
+</font></pre>
+</td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th width="150" > <font size="2">Output Gate:</th><th width="500" > <font size="2"><font color="blue"><a name="Output Gate.Arch1.OG_CPU_N" >OG_CPU_N</a>
+</font></th></tr>
+<tr ><td > <font size="2"><B><center>Function</center></B></td><td > <font size="2"><pre><font size="2">
+MicroA_N-&gt;Mark() = 0;
+MicroB_N-&gt;Mark() = 0;
+CAN_N-&gt;Mark() = 0;
+if(WDALIC_FailedUnsafe_N-&gt;Mark() == 1){
+	CPU_Failed_Unsafe_N-&gt;Mark() = 1;
+} else{
+	WDALIC_N-&gt;Mark() = 0;
+	WDALIC_Failed_N-&gt;Mark() = 1;
+	CPU_Failed_N-&gt;Mark() = 1;
+	CAN_Failed_N-&gt;Mark() = 1;
+}
+</font></pre>
+</td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th width="150" > <font size="2">Output Gate:</th><th width="500" > <font size="2"><font color="blue"><a name="Output Gate.Arch1.OG_CPU_R" >OG_CPU_R</a>
+</font></th></tr>
+<tr ><td > <font size="2"><B><center>Function</center></B></td><td > <font size="2"><pre><font size="2">
+MicroA_R-&gt;Mark() = 0;
+MicroB_R-&gt;Mark() = 0;
+CAN_R-&gt;Mark() = 0;
+if(WDALIC_FailedUnsafe_R-&gt;Mark() == 1){
+	CPU_Failed_Unsafe_R-&gt;Mark() = 1;
+} else{
+	WDALIC_R-&gt;Mark() = 0;
+	WDALIC_Failed_R-&gt;Mark() = 1;
+	CPU_Failed_R-&gt;Mark() = 1;
+	CAN_Failed_R-&gt;Mark() = 1;
+}
+</font></pre>
+</td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th width="150" > <font size="2">Output Gate:</th><th width="500" > <font size="2"><font color="blue"><a name="Output Gate.Arch1.OG_Restart" >OG_Restart</a>
+</font></th></tr>
+<tr ><td > <font size="2"><B><center>Function</center></B></td><td > <font size="2"><pre><font size="2">
+WDALIC_N-&gt;Mark() = 1;
+MicroA_N-&gt;Mark() = 1;
+MicroB_N-&gt;Mark() = 1;
+CAN_N-&gt;Mark() = 1;
+ODO_N-&gt;Mark() = 1;
+IO_N-&gt;Mark() = 1;
+WDALIC_R-&gt;Mark() = 1;
+MicroA_R-&gt;Mark() = 1;
+MicroB_R-&gt;Mark() = 1;
+CAN_R-&gt;Mark() = 1;
+ODO_R-&gt;Mark() = 1;
+IO_R-&gt;Mark() = 1;
+</font></pre>
+</td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th width="150" > <font size="2">Output Gate:</th><th width="500" > <font size="2"><font color="blue"><a name="Output Gate.Arch1.OG_SysFails" >OG_SysFails</a>
+</font></th></tr>
+<tr ><td > <font size="2"><B><center>Function</center></B></td><td > <font size="2"><pre><font size="2">
+WDALIC_FailedUnsafe_N-&gt;Mark() = 0;
+WDALIC_FailedUnsafe_R-&gt;Mark() = 0;
+MicroA_N-&gt;Mark() = 0;
+MicroB_N-&gt;Mark() = 0;
+WDALIC_N-&gt;Mark() = 0;
+WDALIC_N-&gt;Mark() = 0;
+MicroA_R-&gt;Mark() = 0;
+MicroB_R-&gt;Mark() = 0;
+WDALIC_R-&gt;Mark() = 0;
+WDALIC_R-&gt;Mark() = 0;
+CAN_N-&gt;Mark() = 0;
+CAN_R-&gt;Mark() = 0;
+ODO_N-&gt;Mark() = 0;
+ODO_R-&gt;Mark() = 0;
+IO_N-&gt;Mark() = 0;
+IO_R-&gt;Mark() = 0;
+SafeFailure-&gt;Mark() = 1;
+</font></pre>
+</td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th width="150" > <font size="2">Output Gate:</th><th width="500" > <font size="2"><font color="blue"><a name="Output Gate.Arch1.OG_SysFailsUnsafe" >OG_SysFailsUnsafe</a>
+</font></th></tr>
+<tr ><td > <font size="2"><B><center>Function</center></B></td><td > <font size="2"><pre><font size="2">
+CPU_Failed_N-&gt;Mark() = 0;
+CPU_Failed_R-&gt;Mark() = 0;
+WDALIC_Failed_N-&gt;Mark() = 0;
+WDALIC_Failed_R-&gt;Mark() = 0;
+CAN_Failed_N-&gt;Mark() = 0;
+CAN_Failed_R-&gt;Mark() = 0;
+MicroA_N-&gt;Mark() = 0;
+MicroB_N-&gt;Mark() = 0;
+MicroA_R-&gt;Mark() = 0;
+MicroB_R-&gt;Mark() = 0;
+WDALIC_N-&gt;Mark() = 0;
+WDALIC_R-&gt;Mark() = 0;
+CAN_N-&gt;Mark() = 0;
+CAN_R-&gt;Mark() = 0;
+ODO_N-&gt;Mark() = 0;
+ODO_R-&gt;Mark() = 0;
+ODO_Failed_N-&gt;Mark() = 0;
+ODO_Failed_R-&gt;Mark() = 0;
+IO_N-&gt;Mark() = 0;
+IO_R-&gt;Mark() = 0;
+IO_Failed_N-&gt;Mark() = 0;
+IO_Failed_R-&gt;Mark() = 0;
+UnsafeFailure-&gt;Mark() = 1;
+</font></pre>
+</td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th width="150" > <font size="2">Output Gate:</th><th width="500" > <font size="2"><font color="blue"><a name="Output Gate.Arch1.OG_WDALIC_Safe_N" >OG_WDALIC_Safe_N</a>
+</font></th></tr>
+<tr ><td > <font size="2"><B><center>Function</center></B></td><td > <font size="2"><pre><font size="2">
+WDALIC_Failed_N-&gt;Mark() = 1;
+MicroA_N-&gt;Mark() = 0;
+MicroB_N-&gt;Mark() = 0;
+CPU_Failed_N-&gt;Mark() = 1;
+CAN_N-&gt;Mark() = 0;
+CAN_Failed_N-&gt;Mark() = 1;
+</font></pre>
+</td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th width="150" > <font size="2">Output Gate:</th><th width="500" > <font size="2"><font color="blue"><a name="Output Gate.Arch1.OG_WDALIC_Safe_R" >OG_WDALIC_Safe_R</a>
+</font></th></tr>
+<tr ><td > <font size="2"><B><center>Function</center></B></td><td > <font size="2"><pre><font size="2">
+WDALIC_Failed_R-&gt;Mark() = 1;
+MicroA_R-&gt;Mark() = 0;
+MicroB_R-&gt;Mark() = 0;
+CPU_Failed_R-&gt;Mark() = 1;
+CAN_R-&gt;Mark() = 0;
+CAN_Failed_R-&gt;Mark() = 1;
+</font></pre>
+</td></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th colspan="3" > <font size="2">Performance Variable Model: ModelArch1</th></tr>
+<tr ><td rowspan="2"><font size="2">Top Level Model Information</td><td > <font size="2">Child Model Name</td><td > <font size="2">Arch1</td></tr>
+<tr ><td > <font size="2">Model Type</td><td > <font size="2">SAN Model</td></tr>
+<tr ></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th colspan="4" > <font size="2">Performance Variable : FailureProb</th></tr>
+<tr ><td rowspan="1"><font size="2">Affecting Models</td><td Colspan="3" > <font size="2">Arch1</td></tr>
+<tr ><td rowspan="1"><font size="2">Impulse Functions</td><td Colspan="3" > <font size="2"></td></tr>
+<tr ><td > <font size="2">Reward Function</td><td Colspan="3" > <font size="2"><i>(Reward is over all Available Models)</i><pre COLS="60" WRAP><font size="1">
+if(Arch1-&gt;UnsafeFailure-&gt;Mark() == 1 || Arch1-&gt;SafeFailure-&gt;Mark() == 1){
+	return 1;
+}
+</font></pre>
+</td></tr>
+<tr ><td rowspan="10"><font size="2">Simulator Statistics</td><td > <font size="2">Type</td><td Colspan="2" > <font size="2">Steady State</td></tr>
+<tr ><td rowspan="5"><font size="2">Options</td><td Colspan="2" > <font size="2">Estimate Mean</td></tr>
+<tr ><td Colspan="2" > <font size="2">Include Lower Bound on Interval Estimate</td></tr>
+<tr ><td Colspan="2" > <font size="2">Include Upper Bound on Interval Estimate</td></tr>
+<tr ><td Colspan="2" > <font size="2">Estimate out of Range Probabilities</td></tr>
+<tr ><td Colspan="2" > <font size="2">Confidence Level is Relative</td></tr>
+<tr ><td rowspan="2"><font size="2">Parameters</td><td > <font size="2">Initial Transient</td><td > <font size="2">0.0</td></tr>
+<tr ><td > <font size="2">Batch Size</td><td > <font size="2">25000.0</td></tr>
+<tr ><td rowspan="2"><font size="2">Confidence</td><td > <font size="2">Confidence Level</td><td > <font size="2">0.99</td></tr>
+<tr ><td > <font size="2">Confidence Interval</td><td > <font size="2">0.1</td></tr>
+<tr ></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th colspan="4" > <font size="2">Performance Variable : FailureUnsafeProb</th></tr>
+<tr ><td rowspan="1"><font size="2">Affecting Models</td><td Colspan="3" > <font size="2">Arch1</td></tr>
+<tr ><td rowspan="1"><font size="2">Impulse Functions</td><td Colspan="3" > <font size="2"></td></tr>
+<tr ><td > <font size="2">Reward Function</td><td Colspan="3" > <font size="2"><i>(Reward is over all Available Models)</i><pre COLS="60" WRAP><font size="1">
+if(Arch1-&gt;UnsafeFailure-&gt;Mark() == 1){
+	return 1;
+}
+</font></pre>
+</td></tr>
+<tr ><td rowspan="10"><font size="2">Simulator Statistics</td><td > <font size="2">Type</td><td Colspan="2" > <font size="2">Steady State</td></tr>
+<tr ><td rowspan="5"><font size="2">Options</td><td Colspan="2" > <font size="2">Estimate Mean</td></tr>
+<tr ><td Colspan="2" > <font size="2">Include Lower Bound on Interval Estimate</td></tr>
+<tr ><td Colspan="2" > <font size="2">Include Upper Bound on Interval Estimate</td></tr>
+<tr ><td Colspan="2" > <font size="2">Estimate out of Range Probabilities</td></tr>
+<tr ><td Colspan="2" > <font size="2">Confidence Level is Relative</td></tr>
+<tr ><td rowspan="2"><font size="2">Parameters</td><td > <font size="2">Initial Transient</td><td > <font size="2">0.0</td></tr>
+<tr ><td > <font size="2">Batch Size</td><td > <font size="2">25000.0</td></tr>
+<tr ><td rowspan="2"><font size="2">Confidence</td><td > <font size="2">Confidence Level</td><td > <font size="2">0.99</td></tr>
+<tr ><td > <font size="2">Confidence Interval</td><td > <font size="2">0.1</td></tr>
+<tr ></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<tr ><th colspan="4" > <font size="2">Performance Variable : FailureSafeProb</th></tr>
+<tr ><td rowspan="1"><font size="2">Affecting Models</td><td Colspan="3" > <font size="2">Arch1</td></tr>
+<tr ><td rowspan="1"><font size="2">Impulse Functions</td><td Colspan="3" > <font size="2"></td></tr>
+<tr ><td > <font size="2">Reward Function</td><td Colspan="3" > <font size="2"><i>(Reward is over all Available Models)</i><pre COLS="60" WRAP><font size="1">
+if(Arch1-&gt;SafeFailure-&gt;Mark() == 1){
+	return 1;
+}
+</font></pre>
+</td></tr>
+<tr ><td rowspan="10"><font size="2">Simulator Statistics</td><td > <font size="2">Type</td><td Colspan="2" > <font size="2">Steady State</td></tr>
+<tr ><td rowspan="5"><font size="2">Options</td><td Colspan="2" > <font size="2">Estimate Mean</td></tr>
+<tr ><td Colspan="2" > <font size="2">Include Lower Bound on Interval Estimate</td></tr>
+<tr ><td Colspan="2" > <font size="2">Include Upper Bound on Interval Estimate</td></tr>
+<tr ><td Colspan="2" > <font size="2">Estimate out of Range Probabilities</td></tr>
+<tr ><td Colspan="2" > <font size="2">Confidence Level is Relative</td></tr>
+<tr ><td rowspan="2"><font size="2">Parameters</td><td > <font size="2">Initial Transient</td><td > <font size="2">0.0</td></tr>
+<tr ><td > <font size="2">Batch Size</td><td > <font size="2">25000.0</td></tr>
+<tr ><td rowspan="2"><font size="2">Confidence</td><td > <font size="2">Confidence Level</td><td > <font size="2">0.99</td></tr>
+<tr ><td > <font size="2">Confidence Interval</td><td > <font size="2">0.1</td></tr>
+<tr ></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<caption align="Top"><font size="2"><B><font color="red">Range Study Variable Assignments for Study <i><font color="black">studyArch1</font></i> in Project <i><font color="blue">Arch1</font></i> </font></B>: </caption>
+<tr ><th width="110" > <font size="2"><B><center>Variable</center></B></th><th width="60" > <font size="2"><B><center>Type</center></B></th><th width="80" > <font size="2"><B><center>Range Type</center></B></th><th width="100" > <font size="2"><B><center>Range</center></B></th><th width="50" > <font size="2"><B><center>Increment</center></B></th><th width="90" > <font size="2"><B><center>Increment Type</center></B></th><th width="70" > <font size="2"><B><center>Function</center></B></th><th width="20" > <font size="2"><B><center>n</center></B></th></tr>
+<tr ><td > <font size="2"><font color="blue">CAN_FailureRate</font></td><td > <font size="2"><font color="blue">double</font></td><td > <font size="2"><font color="blue">Fixed</font></td><td > <font size="2"><font color="blue">2.66E-6</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td></tr>
+<tr ><td > <font size="2"><font color="blue">IO_FailureRate</font></td><td > <font size="2"><font color="blue">double</font></td><td > <font size="2"><font color="blue">Fixed</font></td><td > <font size="2"><font color="blue">4.12E-6</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td></tr>
+<tr ><td > <font size="2"><font color="blue">MicroA_FailureRate</font></td><td > <font size="2"><font color="blue">double</font></td><td > <font size="2"><font color="blue">Fixed</font></td><td > <font size="2"><font color="blue">5.38E-6</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td></tr>
+<tr ><td > <font size="2"><font color="blue">MicroB_FailureRate</font></td><td > <font size="2"><font color="blue">double</font></td><td > <font size="2"><font color="blue">Fixed</font></td><td > <font size="2"><font color="blue">6.57E-6</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td></tr>
+<tr ><td > <font size="2"><font color="blue">ODO_FailureRate</font></td><td > <font size="2"><font color="blue">double</font></td><td > <font size="2"><font color="blue">Fixed</font></td><td > <font size="2"><font color="blue">3.59E-6</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td></tr>
+<tr ><td > <font size="2"><font color="blue">WDALIC_FailureRate</font></td><td > <font size="2"><font color="blue">double</font></td><td > <font size="2"><font color="blue">Fixed</font></td><td > <font size="2"><font color="blue">2.47E-6</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td></tr>
+<tr ><td > <font size="2"><font color="blue">babb_idiot_prob</font></td><td > <font size="2"><font color="blue">double</font></td><td > <font size="2"><font color="blue">Fixed</font></td><td > <font size="2"><font color="blue">0.05</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td></tr>
+<tr ><td > <font size="2"><font color="blue">wdalic_prob_unsafe</font></td><td > <font size="2"><font color="blue">double</font></td><td > <font size="2"><font color="blue">Manual</font></td><td > <font size="2"><font color="blue">[1.0E-5, 1.0E-4, 0.001, 0.01, 0.1]</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td></tr>
+<tr ></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<caption align="Top"><font size="2"><B><font color="red">Range Study Variable Assignments for Study <i><font color="black">studyArch1BabblingIdiot</font></i> in Project <i><font color="blue">Arch1</font></i> </font></B>: </caption>
+<tr ><th width="110" > <font size="2"><B><center>Variable</center></B></th><th width="60" > <font size="2"><B><center>Type</center></B></th><th width="80" > <font size="2"><B><center>Range Type</center></B></th><th width="100" > <font size="2"><B><center>Range</center></B></th><th width="50" > <font size="2"><B><center>Increment</center></B></th><th width="90" > <font size="2"><B><center>Increment Type</center></B></th><th width="70" > <font size="2"><B><center>Function</center></B></th><th width="20" > <font size="2"><B><center>n</center></B></th></tr>
+<tr ><td > <font size="2"><font color="blue">CAN_FailureRate</font></td><td > <font size="2"><font color="blue">double</font></td><td > <font size="2"><font color="blue">Fixed</font></td><td > <font size="2"><font color="blue">2.66E-6</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td></tr>
+<tr ><td > <font size="2"><font color="blue">IO_FailureRate</font></td><td > <font size="2"><font color="blue">double</font></td><td > <font size="2"><font color="blue">Fixed</font></td><td > <font size="2"><font color="blue">4.12E-6</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td></tr>
+<tr ><td > <font size="2"><font color="blue">MicroA_FailureRate</font></td><td > <font size="2"><font color="blue">double</font></td><td > <font size="2"><font color="blue">Fixed</font></td><td > <font size="2"><font color="blue">5.38E-6</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td></tr>
+<tr ><td > <font size="2"><font color="blue">MicroB_FailureRate</font></td><td > <font size="2"><font color="blue">double</font></td><td > <font size="2"><font color="blue">Fixed</font></td><td > <font size="2"><font color="blue">6.57E-6</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td></tr>
+<tr ><td > <font size="2"><font color="blue">ODO_FailureRate</font></td><td > <font size="2"><font color="blue">double</font></td><td > <font size="2"><font color="blue">Fixed</font></td><td > <font size="2"><font color="blue">3.59E-6</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td></tr>
+<tr ><td > <font size="2"><font color="blue">WDALIC_FailureRate</font></td><td > <font size="2"><font color="blue">double</font></td><td > <font size="2"><font color="blue">Fixed</font></td><td > <font size="2"><font color="blue">2.47E-6</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td></tr>
+<tr ><td > <font size="2"><font color="blue">babb_idiot_prob</font></td><td > <font size="2"><font color="blue">double</font></td><td > <font size="2"><font color="blue">Manual</font></td><td > <font size="2"><font color="blue">[0.01, 0.05, 0.1, 0.15, 0.2]</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td></tr>
+<tr ><td > <font size="2"><font color="blue">wdalic_prob_unsafe</font></td><td > <font size="2"><font color="blue">double</font></td><td > <font size="2"><font color="blue">Fixed</font></td><td > <font size="2"><font color="blue">0.001</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td></tr>
+<tr ></tr>
+</font>
+</table>
+<p>
+
+
+<p>
+<table border="1"CELLSPACING="0" >
+<caption align="Top"><font size="2"><B><font color="red">Range Study Variable Assignments for Study <i><font color="black">studyArch1CANBus</font></i> in Project <i><font color="blue">Arch1</font></i> </font></B>: </caption>
+<tr ><th width="110" > <font size="2"><B><center>Variable</center></B></th><th width="60" > <font size="2"><B><center>Type</center></B></th><th width="80" > <font size="2"><B><center>Range Type</center></B></th><th width="100" > <font size="2"><B><center>Range</center></B></th><th width="50" > <font size="2"><B><center>Increment</center></B></th><th width="90" > <font size="2"><B><center>Increment Type</center></B></th><th width="70" > <font size="2"><B><center>Function</center></B></th><th width="20" > <font size="2"><B><center>n</center></B></th></tr>
+<tr ><td > <font size="2"><font color="blue">CAN_FailureRate</font></td><td > <font size="2"><font color="blue">double</font></td><td > <font size="2"><font color="blue">Manual</font></td><td > <font size="2"><font color="blue">[2.66E-4, 2.66E-5, 2.66E-6, 2.66E-7]</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td></tr>
+<tr ><td > <font size="2"><font color="blue">IO_FailureRate</font></td><td > <font size="2"><font color="blue">double</font></td><td > <font size="2"><font color="blue">Fixed</font></td><td > <font size="2"><font color="blue">4.12E-6</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td></tr>
+<tr ><td > <font size="2"><font color="blue">MicroA_FailureRate</font></td><td > <font size="2"><font color="blue">double</font></td><td > <font size="2"><font color="blue">Fixed</font></td><td > <font size="2"><font color="blue">5.38E-6</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td></tr>
+<tr ><td > <font size="2"><font color="blue">MicroB_FailureRate</font></td><td > <font size="2"><font color="blue">double</font></td><td > <font size="2"><font color="blue">Fixed</font></td><td > <font size="2"><font color="blue">6.57E-6</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td></tr>
+<tr ><td > <font size="2"><font color="blue">ODO_FailureRate</font></td><td > <font size="2"><font color="blue">double</font></td><td > <font size="2"><font color="blue">Fixed</font></td><td > <font size="2"><font color="blue">3.59E-6</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td></tr>
+<tr ><td > <font size="2"><font color="blue">WDALIC_FailureRate</font></td><td > <font size="2"><font color="blue">double</font></td><td > <font size="2"><font color="blue">Fixed</font></td><td > <font size="2"><font color="blue">2.47E-6</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td></tr>
+<tr ><td > <font size="2"><font color="blue">babb_idiot_prob</font></td><td > <font size="2"><font color="blue">double</font></td><td > <font size="2"><font color="blue">Fixed</font></td><td > <font size="2"><font color="blue">0.05</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td></tr>
+<tr ><td > <font size="2"><font color="blue">wdalic_prob_unsafe</font></td><td > <font size="2"><font color="blue">double</font></td><td > <font size="2"><font color="blue">Fixed</font></td><td > <font size="2"><font color="blue">0.001</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td><td > <font size="2"><font color="blue">-</font></td></tr>
+<tr ></tr>
+</font>
+</table>
+<p>
+
+</body>
+<hr>HTML generated by M&#246bius Documentor
